@@ -13,17 +13,13 @@
     </style>
 </head>
 <body>
-    <p id="message">어떤 피자 브랜드를 먹을까?</p>
+    <p id="message">어떤 년을 먹을까?</p>
     <button onclick="showRandomMessage()">눌러서 확인하기</button>
 
     <script>
         function showRandomMessage() {
             const messages = [
-                "도미노피자를 드세요.",
-                "피자스쿨을 드세요.",
-                "피자나라 치킨공주를 드세요.",
-                "파파존스를 드세요.",
-                "알볼로피자를 드세요."
+                "애미"
             ];
             document.getElementById("message").innerText = messages[Math.floor(Math.random() * messages.length)];
         }
